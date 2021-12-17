@@ -44,3 +44,18 @@ do
          convert $no_extension.jpg  $no_extension.png
 done
 
+#if-else 
+
+cd ~/Downloads/imagens-livros
+
+if [ ! -d png ]
+then
+    mkdir png
+fi
+
+for image in *.jpg
+do
+         no_extension=$(ls $image | awk -F. '{ print $1 }')
+         convert $no_extension.jpg png/$no_extension.png
+done
+

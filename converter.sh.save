@@ -1,8 +1,0 @@
-#!/bin/ba=~/Downloads/imagens-livros
-
-for image in $@
-do
-	 convert $PATH_IMAGES/$image.jpg $PATH_IMAGES/$image.png
-done
-
-
